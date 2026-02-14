@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace CFXP\Core\Session;
+namespace Denosys\Session;
 
 interface SessionInterface
 {

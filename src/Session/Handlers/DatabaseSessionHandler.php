@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace CFXP\Core\Session\Handlers;
+namespace Denosys\Session\Handlers;
 
-use CFXP\Core\Database\Connection\Connection;
-use CFXP\Core\Exceptions\DatabaseException;
+use Denosys\Database\Connection\Connection;
+use Denosys\Database\Exceptions\DatabaseException;
 use Psr\Log\LoggerInterface;
 use Psr\Log\NullLogger;
 use SessionHandlerInterface;

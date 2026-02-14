@@ -5,13 +5,13 @@
   "license": "MIT",
   "require": {
     "php": "^8.2",
-    "denosyscore/database": "^0.1",
-    "denosyscore/encryption": "^0.1",
-    "denosyscore/http": "^0.1"
+    "denosyscore/database": "^0.2",
+    "denosyscore/encryption": "^0.2",
+    "denosyscore/http": "^0.2"
   },
   "autoload": {
     "psr-4": {
-      "CFXP\\Core\\": "src/"
+      "Denosys\\\\Session\\\\": "src/Session/"
     }
   },
   "config": {

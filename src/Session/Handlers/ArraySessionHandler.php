@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace CFXP\Core\Session\Handlers;
+namespace Denosys\Session\Handlers;
 
 use SessionHandlerInterface;
 

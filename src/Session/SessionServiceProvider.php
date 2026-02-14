@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace CFXP\Core\Session;
+namespace Denosys\Session;
 
-use CFXP\Core\Container\ContainerInterface;
-use CFXP\Core\Database\Connection\Connection;
-use CFXP\Core\Encryption\EncrypterInterface;
-use CFXP\Core\ServiceProviderInterface;
+use Denosys\Container\ContainerInterface;
+use Denosys\Database\Connection\Connection;
+use Denosys\Encryption\EncrypterInterface;
+use Denosys\Contracts\ServiceProviderInterface;
 use Psr\EventDispatcher\EventDispatcherInterface;
 use Psr\Log\LoggerInterface;
 use RuntimeException;

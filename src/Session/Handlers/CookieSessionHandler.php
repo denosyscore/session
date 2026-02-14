@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace CFXP\Core\Session\Handlers;
+namespace Denosys\Session\Handlers;
 
-use CFXP\Core\Encryption\DecryptException;
-use CFXP\Core\Encryption\EncrypterInterface;
+use Denosys\Encryption\DecryptException;
+use Denosys\Encryption\EncrypterInterface;
 use SessionHandlerInterface;
 
 /**

@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace CFXP\Core\Session;
+namespace Denosys\Session;
 
-use CFXP\Core\Database\Connection\Connection;
-use CFXP\Core\Encryption\DecryptException;
-use CFXP\Core\Encryption\EncrypterInterface;
-use CFXP\Core\Session\Handlers\ArraySessionHandler;
-use CFXP\Core\Session\Handlers\CookieSessionHandler;
-use CFXP\Core\Session\Handlers\DatabaseSessionHandler;
-use CFXP\Core\Session\Handlers\FileSessionHandler;
+use Denosys\Database\Connection\Connection;
+use Denosys\Encryption\DecryptException;
+use Denosys\Encryption\EncrypterInterface;
+use Denosys\Session\Handlers\ArraySessionHandler;
+use Denosys\Session\Handlers\CookieSessionHandler;
+use Denosys\Session\Handlers\DatabaseSessionHandler;
+use Denosys\Session\Handlers\FileSessionHandler;
 use InvalidArgumentException;
 use Psr\Log\LoggerInterface;
 use SessionHandlerInterface;
