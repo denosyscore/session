@@ -74,7 +74,7 @@ class SessionManager
         $handler = $this->createHandler();
 
         $store = new Store(
-            $this->config['cookie'] ?? 'cfxp_session',
+            $this->config['cookie'] ?? 'denosys_session',
             $handler,
             $this->getSessionIdFromRequest()
         );
@@ -169,7 +169,7 @@ class SessionManager
         return new CookieSessionHandler(
             $this->encrypter,
             $this->config['lifetime'] ?? self::DEFAULT_LIFETIME,
-            $this->config['cookie_data'] ?? 'cfxp_session_data',
+            $this->config['cookie_data'] ?? 'denosys_session_data',
             $this->getCookieConfig()
         );
     }
@@ -189,7 +189,7 @@ class SessionManager
      */
     protected function getSessionIdFromRequest(): ?string
     {
-        $cookieName = $this->config['cookie'] ?? 'cfxp_session';
+        $cookieName = $this->config['cookie'] ?? 'denosys_session';
         $cookieValue = $_COOKIE[$cookieName] ?? null;
 
         if (null === $cookieValue) {
@@ -252,7 +252,7 @@ class SessionManager
 public function getCookieConfig(): array
     {
         return [
-            'name' => $this->config['cookie'] ?? 'cfxp_session',
+            'name' => $this->config['cookie'] ?? 'denosys_session',
             'lifetime' => $this->config['lifetime'] ?? self::DEFAULT_LIFETIME,
             'expire_on_close' => $this->config['expire_on_close'] ?? false,
             'path' => $this->config['path'] ?? '/',

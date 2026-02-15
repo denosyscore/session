@@ -62,7 +62,7 @@ class CookieSessionHandler implements SessionHandlerInterface
     public function __construct(
         EncrypterInterface $encrypter,
         int $minutes = 120,
-        string $cookieName = 'cfxp_session_data',
+        string $cookieName = 'denosys_session_data',
         array $cookieConfig = []
     ) {
         $this->encrypter = $encrypter;

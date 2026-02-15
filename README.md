@@ -4,7 +4,7 @@ Session management and handlers
 
 ## Status
 
-Initial extraction snapshot from cfxprimes-core as of 2026-02-14.
+Initial extraction snapshot from denosyscore monorepo as of 2026-02-14.
 
 ## Installation
 
