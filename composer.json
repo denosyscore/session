@@ -5,9 +5,10 @@
   "license": "MIT",
   "require": {
     "php": "^8.2",
-    "denosyscore/database": "^0.2 || ^0.3 || ^0.4",
+    "denosyscore/database": "^0.2 || ^0.3 || ^0.4 || ^0.5",
     "denosyscore/encryption": "^0.2",
-    "denosyscore/http": "^0.2 || ^0.3"
+    "denosyscore/http": "^0.2 || ^0.3",
+    "psr/log": "^2.0 || ^3.0"
   },
   "autoload": {
     "psr-4": {
