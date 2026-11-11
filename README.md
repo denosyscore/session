@@ -2,13 +2,47 @@
 
 Session management and handlers
 
-## Status
-
-Initial extraction snapshot from denosyscore monorepo as of 2026-02-14.
-
 ## Installation
 
+```bash
 composer require denosyscore/session
+```
+
+## Quick start
+
+Store per-visitor data between requests in files, a database, cookies or memory.
+
+<!-- quickstart -->
+```php
+<?php
+
+require __DIR__ . '/vendor/autoload.php';
+
+use Denosys\Encryption\Encrypter;
+use Denosys\Session\Handlers\FileSessionHandler;
+use Denosys\Session\Store;
+
+$path = sys_get_temp_dir() . '/my-app-sessions';
+@mkdir($path, 0700, true);
+$handler = new FileSessionHandler($path, minutes: 120);
+$encrypter = new Encrypter(Encrypter::generateKey());  // optional: encrypt stored payloads
+
+// First request: start, write and save.
+$session = new Store('app_session', $handler);
+$session->setEncrypter($encrypter);
+$session->start();
+$session->put('cart', ['sku-1', 'sku-2']);
+$session->flash('status', 'Item added');
+$session->save();
+$id = $session->getId();  // send this in the session cookie
+
+// Next request: the same id restores the data.
+$next = new Store('app_session', $handler, $id);
+$next->setEncrypter($encrypter);
+$next->start();
+print_r($next->get('cart'));        // ['sku-1', 'sku-2']
+echo $next->getFlash('status'), "\n";  // Item added
+```
 
 ## Included Modules
 
