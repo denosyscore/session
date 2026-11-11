@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.2.6 – 2026-11-11
+
+- Accept `denosyscore/http` 0.4, which removes classes this package never used.
+  CI tests it with database 0.5.0.
+
 ## 0.2.5 – 2026-11-11
 
 - Accept `denosyscore/database` 0.5. The database session handler reads, writes,
