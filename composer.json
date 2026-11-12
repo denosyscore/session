@@ -5,9 +5,9 @@
   "license": "MIT",
   "require": {
     "php": "^8.2",
-    "denosyscore/database": "^0.2 || ^0.3 || ^0.4 || ^0.5",
-    "denosyscore/encryption": "^0.2",
-    "denosyscore/http": "^0.2 || ^0.3 || ^0.4",
+    "denosyscore/database": "^0.10",
+    "denosyscore/encryption": "^0.10",
+    "denosyscore/http": "^0.10",
     "psr/log": "^2.0 || ^3.0"
   },
   "autoload": {
@@ -23,5 +23,10 @@
   },
   "scripts": {
     "analyse": "phpstan analyse --no-progress --memory-limit=1G"
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-main": "0.10.x-dev"
+    }
   }
 }
