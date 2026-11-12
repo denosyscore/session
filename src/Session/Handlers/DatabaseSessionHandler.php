@@ -313,7 +313,7 @@ public function getSessionsByUser(int $userId): array
                 ->where('user_id', '=', $userId);
 
             if ($exceptSessionId !== null) {
-                $query->where('id', '!=', $exceptSessionId);
+                $query = $query->where('id', '!=', $exceptSessionId);
             }
 
             $query->delete();

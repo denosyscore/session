@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.17.0 – 2026-11-12
+
+- `DatabaseSessionHandler::destroyUserSessions()` keeps the excluded session
+  with the immutable query builder.
+
 ## 0.16.0 – 2026-11-12
 
 - Released with the framework's 0.16 line; no changes to this package.
