@@ -5,9 +5,9 @@
   "license": "MIT",
   "require": {
     "php": "^8.2",
-    "denosyscore/container": "^0.12",
-    "denosyscore/database": "^0.12",
-    "denosyscore/encryption": "^0.12",
+    "denosyscore/container": "^0.13",
+    "denosyscore/database": "^0.13",
+    "denosyscore/encryption": "^0.13",
     "psr/http-message": "^2.0",
     "psr/http-server-handler": "^1.0",
     "psr/http-server-middleware": "^1.0",
@@ -29,7 +29,7 @@
   },
   "extra": {
     "branch-alias": {
-      "dev-main": "0.12.x-dev"
+      "dev-main": "0.13.x-dev"
     }
   }
 }
