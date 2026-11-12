@@ -1,0 +1,433 @@
+parameters:
+	ignoreErrors:
+		-
+			message: '#^Method Denosys\\Session\\Handlers\\ArraySessionHandler\:\:read\(\) should return string\|false but returns mixed\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Session/Handlers/ArraySessionHandler.php
+
+		-
+			message: '#^Method Denosys\\Session\\Handlers\\CookieSessionHandler\:\:read\(\) should return string\|false but returns mixed\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Session/Handlers/CookieSessionHandler.php
+
+		-
+			message: '#^Parameter \#1 \$json of function json_decode expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Session/Handlers/CookieSessionHandler.php
+
+		-
+			message: '#^Parameter \#1 \$payload of method Denosys\\Encryption\\EncrypterInterface\:\:decrypt\(\) expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Session/Handlers/CookieSessionHandler.php
+
+		-
+			message: '#^Parameter \#1 \$string of function ucfirst expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 2
+			path: src/Session/Handlers/CookieSessionHandler.php
+
+		-
+			message: '#^Parameter \#3 \$options of function setcookie expects array\{expires\?\: int, path\?\: string, domain\?\: string, secure\?\: bool, httponly\?\: bool, samesite\?\: ''Lax''\|''lax''\|''None''\|''none''\|''Strict''\|''strict'', partitioned\?\: bool\}, array\{expires\: int, path\: mixed, domain\: mixed, secure\: mixed, httponly\: mixed, samesite\: string\} given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Session/Handlers/CookieSessionHandler.php
+
+		-
+			message: '#^Parameter \#3 \$options of function setcookie expects array\{expires\?\: int, path\?\: string, domain\?\: string, secure\?\: bool, httponly\?\: bool, samesite\?\: ''Lax''\|''lax''\|''None''\|''none''\|''Strict''\|''strict'', partitioned\?\: bool\}, array\{expires\: int\<\-3599, max\>, path\: mixed, domain\: mixed, secure\: mixed, httponly\: mixed, samesite\: string\} given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Session/Handlers/CookieSessionHandler.php
+
+		-
+			message: '#^Method Denosys\\Session\\Handlers\\DatabaseSessionHandler\:\:getIpAddress\(\) should return string\|null but returns mixed\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Session/Handlers/DatabaseSessionHandler.php
+
+		-
+			message: '#^Method Denosys\\Session\\Handlers\\DatabaseSessionHandler\:\:getSessionsByUser\(\) should return array\<string, mixed\> but returns mixed\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Session/Handlers/DatabaseSessionHandler.php
+
+		-
+			message: '#^Method Denosys\\Session\\Handlers\\DatabaseSessionHandler\:\:getUserAgent\(\) should return string\|null but returns mixed\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Session/Handlers/DatabaseSessionHandler.php
+
+		-
+			message: '#^Method Denosys\\Session\\Handlers\\DatabaseSessionHandler\:\:read\(\) should return string\|false but returns mixed\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Session/Handlers/DatabaseSessionHandler.php
+
+		-
+			message: '#^Parameter \#1 \$string of function strlen expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Session/Handlers/DatabaseSessionHandler.php
+
+		-
+			message: '#^Parameter \#1 \$string of function substr expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Session/Handlers/DatabaseSessionHandler.php
+
+		-
+			message: '#^Parameter \#2 \$conflictColumns of method Denosys\\Database\\Query\\Builder\:\:upsert\(\) expects array\<string, mixed\>, array\<int, string\> given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Session/Handlers/DatabaseSessionHandler.php
+
+		-
+			message: '#^Parameter \#3 \$updateColumns of method Denosys\\Database\\Query\\Builder\:\:upsert\(\) expects array\<string, mixed\>, array\<int, string\> given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Session/Handlers/DatabaseSessionHandler.php
+
+		-
+			message: '#^Offset 0 does not exist on array\<string, mixed\>\.$#'
+			identifier: offsetAccess.notFound
+			count: 1
+			path: src/Session/Handlers/FileSessionHandler.php
+
+		-
+			message: '#^Offset 1 does not exist on array\<string, mixed\>\.$#'
+			identifier: offsetAccess.notFound
+			count: 1
+			path: src/Session/Handlers/FileSessionHandler.php
+
+		-
+			message: '#^Parameter \#2 \$max of function random_int expects int, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Session/Handlers/FileSessionHandler.php
+
+		-
+			message: '#^Binary operation "\*" between mixed and 60 results in an error\.$#'
+			identifier: binaryOp.invalid
+			count: 2
+			path: src/Session/SessionManager.php
+
+		-
+			message: '#^Cannot access offset 0 on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: src/Session/SessionManager.php
+
+		-
+			message: '#^Cannot access offset 1 on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: src/Session/SessionManager.php
+
+		-
+			message: '#^Method Denosys\\Session\\SessionManager\:\:createHandler\(\) should return SessionHandlerInterface but returns mixed\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Session/SessionManager.php
+
+		-
+			message: '#^Method Denosys\\Session\\SessionManager\:\:getDefaultDriver\(\) should return string but returns mixed\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Session/SessionManager.php
+
+		-
+			message: '#^Method Denosys\\Session\\SessionManager\:\:getDriver\(\) should return string but returns mixed\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Session/SessionManager.php
+
+		-
+			message: '#^Method Denosys\\Session\\SessionManager\:\:getSessionIdFromRequest\(\) should return string\|null but returns mixed\.$#'
+			identifier: return.type
+			count: 2
+			path: src/Session/SessionManager.php
+
+		-
+			message: '#^Parameter \#1 \$encrypter of class Denosys\\Session\\Handlers\\CookieSessionHandler constructor expects Denosys\\Encryption\\EncrypterInterface, Denosys\\Encryption\\EncrypterInterface\|null given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Session/SessionManager.php
+
+		-
+			message: '#^Parameter \#1 \$minutes of class Denosys\\Session\\Handlers\\ArraySessionHandler constructor expects int, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Session/SessionManager.php
+
+		-
+			message: '#^Parameter \#1 \$name of class Denosys\\Session\\Store constructor expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Session/SessionManager.php
+
+		-
+			message: '#^Parameter \#1 \$name of function setcookie expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Session/SessionManager.php
+
+		-
+			message: '#^Parameter \#1 \$path of class Denosys\\Session\\Handlers\\FileSessionHandler constructor expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Session/SessionManager.php
+
+		-
+			message: '#^Parameter \#1 \$payload of method Denosys\\Encryption\\EncrypterInterface\:\:decrypt\(\) expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Session/SessionManager.php
+
+		-
+			message: '#^Parameter \#1 \$string of function ucfirst expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Session/SessionManager.php
+
+		-
+			message: '#^Parameter \#2 \$max of function random_int expects int, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Session/SessionManager.php
+
+		-
+			message: '#^Parameter \#2 \$minutes of class Denosys\\Session\\Handlers\\CookieSessionHandler constructor expects int, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Session/SessionManager.php
+
+		-
+			message: '#^Parameter \#2 \$minutes of class Denosys\\Session\\Handlers\\FileSessionHandler constructor expects int, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Session/SessionManager.php
+
+		-
+			message: '#^Parameter \#2 \$table of class Denosys\\Session\\Handlers\\DatabaseSessionHandler constructor expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Session/SessionManager.php
+
+		-
+			message: '#^Parameter \#3 \$cookieName of class Denosys\\Session\\Handlers\\CookieSessionHandler constructor expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Session/SessionManager.php
+
+		-
+			message: '#^Parameter \#3 \$minutes of class Denosys\\Session\\Handlers\\DatabaseSessionHandler constructor expects int, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Session/SessionManager.php
+
+		-
+			message: '#^Parameter \#3 \$options of function setcookie expects array\{expires\?\: int, path\?\: string, domain\?\: string, secure\?\: bool, httponly\?\: bool, samesite\?\: ''Lax''\|''lax''\|''None''\|''none''\|''Strict''\|''strict'', partitioned\?\: bool\}, array\{expires\: \(float\|int\), path\: mixed, domain\: mixed, secure\: mixed, httponly\: mixed, samesite\: string\} given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Session/SessionManager.php
+
+		-
+			message: '#^Part \$driver \(mixed\) of encapsed string cannot be cast to string\.$#'
+			identifier: encapsedStringPart.nonString
+			count: 1
+			path: src/Session/SessionManager.php
+
+		-
+			message: '#^Possibly invalid array key type mixed\.$#'
+			identifier: offsetAccess.invalidOffset
+			count: 3
+			path: src/Session/SessionManager.php
+
+		-
+			message: '#^Trying to invoke mixed but it''s not a callable\.$#'
+			identifier: callable.nonCallable
+			count: 1
+			path: src/Session/SessionManager.php
+
+		-
+			message: '#^Binary operation "\." between mixed and ''/session\.php'' results in an error\.$#'
+			identifier: binaryOp.invalid
+			count: 1
+			path: src/Session/SessionServiceProvider.php
+
+		-
+			message: '#^Binary operation "\." between mixed and ''/storage/framework…'' results in an error\.$#'
+			identifier: binaryOp.invalid
+			count: 1
+			path: src/Session/SessionServiceProvider.php
+
+		-
+			message: '#^Method Denosys\\Session\\SessionServiceProvider\:\:getConnection\(\) should return Denosys\\Database\\Connection\\Connection\|null but returns mixed\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Session/SessionServiceProvider.php
+
+		-
+			message: '#^Method Denosys\\Session\\SessionServiceProvider\:\:getEncrypter\(\) should return Denosys\\Encryption\\EncrypterInterface\|null but returns mixed\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Session/SessionServiceProvider.php
+
+		-
+			message: '#^Method Denosys\\Session\\SessionServiceProvider\:\:getLogger\(\) should return Psr\\Log\\LoggerInterface\|null but returns mixed\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Session/SessionServiceProvider.php
+
+		-
+			message: '#^Method Denosys\\Session\\SessionServiceProvider\:\:getSessionConfig\(\) should return array\<string, mixed\> but returns array\<mixed\>\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Session/SessionServiceProvider.php
+
+		-
+			message: '#^Argument of an invalid type mixed supplied for foreach, only iterables are supported\.$#'
+			identifier: foreach.nonIterable
+			count: 2
+			path: src/Session/Store.php
+
+		-
+			message: '#^Cannot access an offset on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: src/Session/Store.php
+
+		-
+			message: '#^Cannot access offset mixed on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 2
+			path: src/Session/Store.php
+
+		-
+			message: '#^Cannot access offset string on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 3
+			path: src/Session/Store.php
+
+		-
+			message: '#^Cannot call method decrypt\(\) on Denosys\\Encryption\\EncrypterInterface\|null\.$#'
+			identifier: method.nonObject
+			count: 1
+			path: src/Session/Store.php
+
+		-
+			message: '#^Cannot call method encrypt\(\) on Denosys\\Encryption\\EncrypterInterface\|null\.$#'
+			identifier: method.nonObject
+			count: 1
+			path: src/Session/Store.php
+
+		-
+			message: '#^Cannot cast mixed to int\.$#'
+			identifier: cast.int
+			count: 1
+			path: src/Session/Store.php
+
+		-
+			message: '#^Method Denosys\\Session\\Store\:\:decodePayload\(\) should return string\|null but returns mixed\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Session/Store.php
+
+		-
+			message: '#^Method Denosys\\Session\\Store\:\:getFlashAll\(\) should return array\<string, mixed\> but returns mixed\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Session/Store.php
+
+		-
+			message: '#^Method Denosys\\Session\\Store\:\:getId\(\) should return string but returns string\|null\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Session/Store.php
+
+		-
+			message: '#^Method Denosys\\Session\\Store\:\:previousUrl\(\) should return string\|null but returns mixed\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Session/Store.php
+
+		-
+			message: '#^Method Denosys\\Session\\Store\:\:setUserId\(\) should return bool but returns mixed\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Session/Store.php
+
+		-
+			message: '#^Method Denosys\\Session\\Store\:\:token\(\) should return string but returns mixed\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Session/Store.php
+
+		-
+			message: '#^Parameter \#1 \$array of function array_diff expects array, mixed given\.$#'
+			identifier: argument.type
+			count: 2
+			path: src/Session/Store.php
+
+		-
+			message: '#^Parameter \#1 \$array of function array_unique expects an array of values castable to string, array\<mixed, mixed\> given\.$#'
+			identifier: argument.type
+			count: 2
+			path: src/Session/Store.php
+
+		-
+			message: '#^Parameter \#1 \$data of method Denosys\\Session\\Store\:\:decodePayload\(\) expects string, string\|false given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Session/Store.php
+
+		-
+			message: '#^Parameter \#1 \$id of method SessionHandlerInterface\:\:destroy\(\) expects string, string\|null given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Session/Store.php
+
+		-
+			message: '#^Parameter \#1 \$id of method SessionHandlerInterface\:\:read\(\) expects string, string\|null given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Session/Store.php
+
+		-
+			message: '#^Parameter \#1 \$id of method SessionHandlerInterface\:\:write\(\) expects string, string\|null given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Session/Store.php
+
+		-
+			message: '#^Parameter \#1 \.\.\.\$arrays of function array_merge expects array, mixed given\.$#'
+			identifier: argument.type
+			count: 2
+			path: src/Session/Store.php
+
+		-
+			message: '#^Parameter \#2 \$haystack of function in_array expects array, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Session/Store.php
+
+		-
+			message: '#^Parameter \#2 \.\.\.\$arrays of function array_merge expects array, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Session/Store.php
+
+		-
+			message: '#^Property Denosys\\Session\\Store\:\:\$attributes \(array\<string, mixed\>\) does not accept array\<mixed, mixed\>\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: src/Session/Store.php
+
+		-
+			message: '#^Strict comparison using \!\=\= between null and mixed will always evaluate to true\.$#'
+			identifier: notIdentical.alwaysTrue
+			count: 1
+			path: src/Session/Store.php
