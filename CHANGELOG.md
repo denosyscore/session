@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.11.0 – 2026-11-12
+
+- **Breaking:** `Denosys\Session\SessionServiceProvider` moved to the framework as `Denosys\Framework\Providers\SessionServiceProvider`. Packages no longer ship service providers; the framework wires packages together.
+- No longer requires `denosyscore/http`; requires container and PSR-7/15 packages.
+
 ## 0.10.0 – 2026-11-12
 
 ### Changed

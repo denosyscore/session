@@ -253,42 +253,6 @@ parameters:
 			path: src/Session/SessionManager.php
 
 		-
-			message: '#^Binary operation "\." between mixed and ''/session\.php'' results in an error\.$#'
-			identifier: binaryOp.invalid
-			count: 1
-			path: src/Session/SessionServiceProvider.php
-
-		-
-			message: '#^Binary operation "\." between mixed and ''/storage/framework…'' results in an error\.$#'
-			identifier: binaryOp.invalid
-			count: 1
-			path: src/Session/SessionServiceProvider.php
-
-		-
-			message: '#^Method Denosys\\Session\\SessionServiceProvider\:\:getConnection\(\) should return Denosys\\Database\\Connection\\Connection\|null but returns mixed\.$#'
-			identifier: return.type
-			count: 1
-			path: src/Session/SessionServiceProvider.php
-
-		-
-			message: '#^Method Denosys\\Session\\SessionServiceProvider\:\:getEncrypter\(\) should return Denosys\\Encryption\\EncrypterInterface\|null but returns mixed\.$#'
-			identifier: return.type
-			count: 1
-			path: src/Session/SessionServiceProvider.php
-
-		-
-			message: '#^Method Denosys\\Session\\SessionServiceProvider\:\:getLogger\(\) should return Psr\\Log\\LoggerInterface\|null but returns mixed\.$#'
-			identifier: return.type
-			count: 1
-			path: src/Session/SessionServiceProvider.php
-
-		-
-			message: '#^Method Denosys\\Session\\SessionServiceProvider\:\:getSessionConfig\(\) should return array\<string, mixed\> but returns array\<mixed\>\.$#'
-			identifier: return.type
-			count: 1
-			path: src/Session/SessionServiceProvider.php
-
-		-
 			message: '#^Argument of an invalid type mixed supplied for foreach, only iterables are supported\.$#'
 			identifier: foreach.nonIterable
 			count: 2
