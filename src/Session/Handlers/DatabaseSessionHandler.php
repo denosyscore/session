@@ -279,12 +279,9 @@ class DatabaseSessionHandler implements SessionHandlerInterface
     /**
      * Get all sessions for a specific user.
      *
-     * @return array<object>
+     * @return list<object>
      */
-    /**
-     * @return array<string, mixed>
-     */
-public function getSessionsByUser(int $userId): array
+    public function getSessionsByUser(int $userId): array
     {
         try {
             return $this->connection->table($this->table)

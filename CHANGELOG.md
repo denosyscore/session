@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.21.0 – 2026-11-13
+
+- Released with the framework's 0.21 line. `DatabaseSessionHandler::getSessionsByUser()`
+  is documented as returning `list<object>`, which it always did.
+
 ## 0.20.0 – 2026-11-13
 
 - Released with the framework's 0.20 line. Requires its DenoSys dependencies
