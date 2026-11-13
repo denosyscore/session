@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.22.0 – 2026-11-13
+
+- Encrypts session data and cookies with the string-only `encrypt()` and
+  `decrypt()` of encryption 0.22.
+
 ## 0.21.0 – 2026-11-13
 
 - Released with the framework's 0.21 line. `DatabaseSessionHandler::getSessionsByUser()`

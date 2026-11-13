@@ -198,7 +198,7 @@ class SessionManager
 
         if ($this->shouldEncrypt() && null !== $this->encrypter) {
             try {
-                return $this->encrypter->decrypt($cookieValue, false);
+                return $this->encrypter->decrypt($cookieValue);
             } catch (DecryptException) {
                 return null;
             }
@@ -216,7 +216,7 @@ class SessionManager
         $sessionId = $session->getId();
 
         if ($this->shouldEncrypt() && null !== $this->encrypter) {
-            $sessionId = $this->encrypter->encrypt($sessionId, false);
+            $sessionId = $this->encrypter->encrypt($sessionId);
         }
 
         setcookie(

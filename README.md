@@ -21,13 +21,15 @@ Store per-visitor data between requests in files, a database, cookies or memory.
 require __DIR__ . '/vendor/autoload.php';
 
 use Denosys\Encryption\Encrypter;
+use Denosys\Encryption\Key;
+use Denosys\Encryption\KeyRing;
 use Denosys\Session\Handlers\FileSessionHandler;
 use Denosys\Session\Store;
 
 $path = sys_get_temp_dir() . '/my-app-sessions';
 @mkdir($path, 0700, true);
 $handler = new FileSessionHandler($path, minutes: 120);
-$encrypter = new Encrypter(Encrypter::generateKey());  // optional: encrypt stored payloads
+$encrypter = new Encrypter(new KeyRing(Key::generate()));  // optional: encrypt stored payloads
 
 // First request: start, write and save.
 $session = new Store('app_session', $handler);

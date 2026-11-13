@@ -170,7 +170,7 @@ class Store implements SessionInterface
 
         if ($this->isEncrypted()) {
             try {
-                return $this->encrypter->decrypt($decoded, false);
+                return $this->encrypter->decrypt($decoded);
             } catch (DecryptException $e) {
                 $this->logger?->warning('Failed to decrypt session payload', [
                     'session_id' => $this->id,
@@ -217,7 +217,7 @@ class Store implements SessionInterface
     protected function encodePayload(string $data): string
     {
         if ($this->isEncrypted()) {
-            $data = $this->encrypter->encrypt($data, false);
+            $data = $this->encrypter->encrypt($data);
         }
 
         return base64_encode($data);

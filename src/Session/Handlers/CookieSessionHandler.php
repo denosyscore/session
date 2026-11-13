@@ -112,7 +112,7 @@ class CookieSessionHandler implements SessionHandlerInterface
         }
 
         try {
-            $decrypted = $this->encrypter->decrypt($cookieValue, false);
+            $decrypted = $this->encrypter->decrypt($cookieValue);
 
             // Validate the decrypted data structure
             $data = json_decode($decrypted, true);
@@ -144,7 +144,7 @@ class CookieSessionHandler implements SessionHandlerInterface
             'expires' => time() + ($this->minutes * 60),
         ], JSON_THROW_ON_ERROR);
 
-        $encrypted = $this->encrypter->encrypt($payload, false);
+        $encrypted = $this->encrypter->encrypt($payload);
 
         // Check size limit
         if (strlen($encrypted) > self::MAX_COOKIE_SIZE) {

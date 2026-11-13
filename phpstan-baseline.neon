@@ -13,12 +13,6 @@ parameters:
 			path: src/Session/Handlers/CookieSessionHandler.php
 
 		-
-			message: '#^Parameter \#1 \$json of function json_decode expects string, mixed given\.$#'
-			identifier: argument.type
-			count: 1
-			path: src/Session/Handlers/CookieSessionHandler.php
-
-		-
 			message: '#^Parameter \#1 \$payload of method Denosys\\Encryption\\EncrypterInterface\:\:decrypt\(\) expects string, mixed given\.$#'
 			identifier: argument.type
 			count: 1
@@ -129,7 +123,7 @@ parameters:
 		-
 			message: '#^Method Denosys\\Session\\SessionManager\:\:getSessionIdFromRequest\(\) should return string\|null but returns mixed\.$#'
 			identifier: return.type
-			count: 2
+			count: 1
 			path: src/Session/SessionManager.php
 
 		-
@@ -273,12 +267,6 @@ parameters:
 		-
 			message: '#^Cannot cast mixed to int\.$#'
 			identifier: cast.int
-			count: 1
-			path: src/Session/Store.php
-
-		-
-			message: '#^Method Denosys\\Session\\Store\:\:decodePayload\(\) should return string\|null but returns mixed\.$#'
-			identifier: return.type
 			count: 1
 			path: src/Session/Store.php
 
